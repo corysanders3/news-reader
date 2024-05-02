@@ -1,0 +1,24 @@
+.main-page {
+    display: flex;
+    margin: 10px 40px;
+}
+
+.news-reel {
+    display: flex;
+    flex-direction: column;
+    border: 8px double #C30100;
+    border-radius: 8px;
+    padding: 0px 20px;
+    margin-top: 105px;
+    width: 280px;
+    height: 600px;
+    overflow: auto;
+}
+
+.main-story {
+    margin-right: 50px;
+}
+
+.main-img {
+    width: 900px;
+}
