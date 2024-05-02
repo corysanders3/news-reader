@@ -1,6 +1,7 @@
-import './Search.css'
+import './Search.css';
+import { NewsProp } from '../util/interface';
 
-function Search() {
+function Search({ articles }: NewsProp) {
 
     return (
         <>

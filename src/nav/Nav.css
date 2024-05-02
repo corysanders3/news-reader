@@ -1,0 +1,28 @@
+.header {
+    background-color: #C30100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-news-img {
+    width: 200px;
+    margin-left: 20px;
+}
+
+.home-btn {
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #C30100;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: white; 
+}
+
+.home-btn:hover {
+    background-color: #767676;
+    color: white;
+    cursor: pointer;
+}

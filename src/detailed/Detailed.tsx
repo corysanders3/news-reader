@@ -1,6 +1,7 @@
-import './Detailed.css'
+import './Detailed.css';
+import { NewsProp } from '../util/interface';
 
-function Detailed() {
+function Detailed({ articles }: NewsProp) {
 
     return (
         <>
