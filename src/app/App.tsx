@@ -21,7 +21,7 @@ function App() {
     setError('');
 
     // getNews('sources', 'bbc-news')
-    //   .then(data => setNews(data))
+    //   .then(data => formatData(data))
     //   .catch(err => setError(err));
 
     formatData(mockData);

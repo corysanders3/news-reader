@@ -7,11 +7,15 @@ import { Articles } from '../util/interface';
 function Detailed({ articles }: NewsProp) {
     const title = useParams<string>().title
     const [foundArt, setFoundArt] = useState<Articles | null>(null)
+    console.log(title)
+    console.log(articles)
 
     useEffect(() => {
-        const foundArticle = articles?.find(article => title === article.title)
-        if(foundArticle) {
-            setFoundArt(foundArticle)
+        if(title) {
+            const foundArticle = articles?.find(article => article.title.includes(title))
+            if(foundArticle) {
+                setFoundArt(foundArticle)
+            }
         }
     }, [])
 
