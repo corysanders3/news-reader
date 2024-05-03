@@ -29,4 +29,8 @@ interface Article {
     article: Articles
 }
 
-export type { News, NewsProp, Articles, Article };
+interface Dropdown {
+    articles: Articles[] | null | React.ReactNode,
+}
+
+export type { News, NewsProp, Articles, Article, Dropdown };
