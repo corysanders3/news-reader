@@ -7,8 +7,6 @@ import { Articles } from '../util/interface';
 function Detailed({ articles }: NewsProp) {
     const title = useParams<string>().title
     const [foundArt, setFoundArt] = useState<Articles | null>(null)
-    console.log(title)
-    console.log(articles)
 
     useEffect(() => {
         if(title) {
@@ -17,16 +15,16 @@ function Detailed({ articles }: NewsProp) {
                 setFoundArt(foundArticle)
             }
         }
-    }, [])
+    })
 
     return (
         <>
             { foundArt &&
-            <main>
+            <main className='detailed-section'>
                 <h2>{foundArt.title}</h2>
                 <h3>{foundArt.publishedAt}</h3>
-                <img src={foundArt.urlToImage} alt={foundArt.title} />
-                <h3>{foundArt.description}</h3>
+                <img src={foundArt.urlToImage} alt={foundArt.title} className='detailed-img' />
+                <h3>{foundArt.content}</h3>
             </main>
             }
         </>
