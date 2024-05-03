@@ -8,7 +8,7 @@ function Card({ article }: Article) {
         <Link to={`/article/${article.title}`}>
             <div className='single-art'>
                 <h4>{article.title}</h4>
-                <img src={article.urlToImage} alt={article.title} className='single-img' />
+                <img src={article.urlToImage} alt={`Picture of ${article.title}`} className='single-img' />
             </div>
         </Link>
     )

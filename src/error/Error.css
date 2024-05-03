@@ -1,0 +1,11 @@
+.bad-path {
+    margin: 0px 40px 40px 40px;
+    font-size: large;
+    color: red;
+}
+
+@media screen and (max-width: 360px) {
+    .bad-path {
+        margin: 0px 10px 40px 10px;
+    }
+}
