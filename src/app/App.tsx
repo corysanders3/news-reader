@@ -21,7 +21,7 @@ function App() {
     setError('');
 
     // getNews('sources', 'bbc-news')
-    //   .then(data => setNews(data))
+    //   .then(data => formatData(data))
     //   .catch(err => setError(err));
 
     formatData(mockData);
@@ -44,6 +44,8 @@ function App() {
     <>
       <Nav />
       <Search articles={articles} />
+      <h1 className='heading1'>Current Pulse</h1>
+      <h2 className='heading2'>Your Spot For Top Headlines Every Day</h2>
       <Routes>
         <Route path='/' element={<Home articles={articles} newsReel={newsReel} />} />
         <Route path='/article/:title' element={<Detailed articles={articles}/>} />
