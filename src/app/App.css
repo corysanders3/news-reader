@@ -1,5 +1,7 @@
 .heading1, .heading2 {
   text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .heading1 {
@@ -11,4 +13,11 @@
   font-weight: 300;
   margin-top: 10px;
   margin-bottom: 0px;
+}
+
+@media screen and (max-width: 360px) {
+  .heading1, .heading2 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
