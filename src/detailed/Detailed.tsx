@@ -10,7 +10,7 @@ function Detailed({ articles }: NewsProp) {
 
     useEffect(() => {
         if(title) {
-            const foundArticle = articles?.find(article => article.title.includes(title))
+            const foundArticle = articles?.find(article => article.title.toLowerCase().includes(title.toLowerCase()))
             if(foundArticle) {
                 setFoundArt(foundArticle)
             }

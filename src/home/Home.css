@@ -8,9 +8,8 @@
     flex-direction: column;
     border: 8px double #C30100;
     border-radius: 8px;
-    padding: 0px 20px;
+    padding: 0px 20px 20px 20px;
     margin-top: 105px;
-    padding-bottom: 20px;
     width: 280px;
     height: 580px;
     overflow: auto;
@@ -23,4 +22,88 @@
 
 .main-img {
     width: 900px;
+}
+
+@media screen and (max-width: 1350px) {
+    .main-page {
+        flex-direction: column;
+    }
+
+    .news-reel {
+        flex-direction: row;
+        padding: 0px 20px;
+        margin-top: 5px;
+        width: 900px;
+        height: 280px;
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .news-reel {
+        width: 700px;
+    }
+
+    .main-story {
+        width: 700px;
+    }
+    
+    .main-img {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .news-reel {
+        width: 500px;
+        height: 250px;
+    }
+
+    .main-story {
+        width: 500px;
+    }
+    
+    .main-img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .news-reel {
+        flex-direction: column;
+        padding: 0px 20px 20px 20px;
+        width: 280px;
+        height: 580px;
+    }
+
+    .main-story {
+        width: 400px;
+    }
+    
+    .main-img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .news-reel {
+        flex-direction: column;
+        padding: 0px 20px 20px 20px;
+        width: 250px;
+        height: 580px;
+    }
+
+    .main-story {
+        width: 300px;
+    }
+    
+    .main-img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .main-page {
+        margin: 0px 10px 40px 10px;
+    }
 }

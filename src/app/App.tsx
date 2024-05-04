@@ -20,11 +20,11 @@ function App() {
   useEffect(() => {
     setError('');
 
-    // getNews('sources', 'bbc-news')
-    //   .then(data => formatData(data))
-    //   .catch(err => setError(err));
+    getNews('sources', 'bbc-news')
+      .then(data => formatData(data))
+      .catch(err => setError(err.message));
 
-    formatData(mockData);
+    // formatData(mockData); this is used for testing to not use up API calls
 
   }, [])
 
@@ -46,6 +46,7 @@ function App() {
       <Search articles={articles} />
       <h1 className='heading1'>Current Pulse</h1>
       <h2 className='heading2'>Your Spot For Top Headlines Every Day</h2>
+      { error && <p className='error'>{error}</p>}
       <Routes>
         <Route path='/' element={<Home articles={articles} newsReel={newsReel} />} />
         <Route path='/article/:title' element={<Detailed articles={articles}/>} />

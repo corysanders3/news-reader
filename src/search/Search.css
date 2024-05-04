@@ -1,0 +1,155 @@
+.form-container {
+    margin: 20px 40px 0px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#search {
+    font-size: 20px;
+    padding-left: 10px;
+    border-radius: 20px;
+    width: 400px;
+}
+
+.dropdown {
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #C30100;
+    position: absolute;
+    width: 390px;
+    top: 139px;
+    left: 160px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.dropdown:empty {
+    border: none;
+    display: none;
+}
+
+.dropdown-item {
+    margin-bottom: 10px;
+}
+
+.dropdown-item:hover {
+    cursor: pointer;
+    background-color: #C30100;
+    color: white;
+}
+
+.search-btn {
+    margin-left: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 1px 15px;
+    background-color: white;
+    color: #C30100;
+}
+
+.search-btn:hover {
+    color: white;
+    background-color: #767676;
+    cursor: pointer;
+}
+
+.error {
+    margin: 20px 40px 0px 40px;
+    font-size: large;
+    color: red;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 740px) {
+    #search {
+        width: 300px;
+    }
+
+    .dropdown {
+        width: 290px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #search {
+        width: 200px;
+    }
+
+    .dropdown {
+        width: 190px;
+    }
+
+    .search-btn {
+        margin-left: 5px;
+    }
+
+    .form-container, .error {
+        margin: 20px 20px 0px 40px;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .form-label, .search-btn, #search, .dropdown-item {
+        font-size: 15px;
+    }
+
+    .dropdown {
+        top: 134px;
+        left: 135px;
+    }
+}
+
+@media screen and (max-width: 472px) {
+    .search-btn {
+        margin-left: 0px;
+    }
+
+    #search {
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .form-container, .error {
+        margin: 20px 10px 0px 10px;
+    }
+
+    #search {
+        margin-right: 0px;
+    }
+
+    .dropdown {
+        top: 134px;
+        left: 105px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .dropdown {
+        top: 110px;
+        left: 105px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .dropdown {
+        width: 130px;
+    }
+
+    #search {
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 285px) {
+    .dropdown {
+        top: 129px;
+        left: 10px;
+    }
+}
