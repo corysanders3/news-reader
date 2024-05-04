@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+# <p align="center">[News Reader (Current Pulse)](https://prem-results-fe.vercel.app/)</p>
+<p align='center' >👆<b>Click the heading to visit the deploy link</b>👆</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">Application that provides user with up-to-date breaking news. It is designed with multiple screen sizes in mind, with responsiveness to accommodate all.</p>
 
-## Available Scripts
+## Preview:
+<img width="1422" alt="Screenshot 2024-05-03 at 5 57 05 PM" src="https://github.com/corysanders3/news-reader/assets/41808895/be06252e-8804-45b3-9f20-90598b08d521">
 
-In the project directory, you can run:
+</br>
+<p align="center">Technologies Used</p>
+<div align="center">
+  <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000&style=for-the-badge" alt="react badge">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=for-the-badge" alt="typescript badge">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=for-the-badge" alt="html badge">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff&style=for-the-badge" alt="css badge">
+  <img src="https://img.shields.io/badge/React%20Router-CA4245?logo=reactrouter&logoColor=fff&style=for-the-badge" alt="router badge">
+</div>
 
-### `npm start`
+## Installation Instructions:
+- Run the following on command line to clone the repo and run the app locally:
+    ```
+    git clone git@github.com:corysanders3/news-reader.git
+    cd news-reader
+    npm install
+    npm start
+    ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Component Architecture:
+<img width="1291" alt="Screenshot 2024-05-03 at 6 05 06 PM" src="https://github.com/corysanders3/news-reader/assets/41808895/bf9acb1f-6db4-44ff-b17c-76d3cf55b93f">
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Backend:
+- Here is a link to the [News API](https://newsapi.org/) used to fetch up-to-date news.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Context:
+- ~40 hours to complete functionality, test suite, and responsiveness
+- Goals
+  ```
+  - Take home project to be completed within 8 hours
+  - Ensure site is responsive for all screen sizes
+  ```
+- Wins
+  ```
+  - Dropdown functionality when user types in search bar for a story
+  - Routing followed component architecture
+  ```
+- Challenges
+  ```
+  - Using useParams when data provided did not have unique IDs
+  - TypeScript error when trying to utilize data within a React Node
+  ```
