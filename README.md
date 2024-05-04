@@ -1,5 +1,4 @@
-# <p align="center">[News Reader (Current Pulse)](https://prem-results-fe.vercel.app/)</p>
-<p align='center' >👆<b>Click the heading to visit the deploy link</b>👆</p>
+# <p align="center">News Reader (Current Pulse)</p>
 
 <p align="center">Application that provides user with up-to-date breaking news. It is designed with multiple screen sizes in mind, with responsiveness to accommodate all.</p>
 
