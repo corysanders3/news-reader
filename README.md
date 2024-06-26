@@ -47,3 +47,6 @@
   - Using useParams when data provided did not have unique IDs
   - TypeScript error when trying to utilize data within a React Node
   ```
+
+## Deployed Page
+[News Reader](https://news-reader-lyart.vercel.app/)
