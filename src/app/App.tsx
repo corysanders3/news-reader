@@ -20,11 +20,11 @@ function App() {
   useEffect(() => {
     setError('');
 
-    getNews('sources', 'bbc-news')
-      .then(data => formatData(data))
-      .catch(err => setError(err.message));
+    // getNews('sources', 'bbc-news')
+    //   .then(data => formatData(data))
+    //   .catch(err => setError(err.message));
 
-      // formatData(mockData);
+    formatData(mockData);
 
   }, [])
 
