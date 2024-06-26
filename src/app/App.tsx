@@ -24,7 +24,7 @@ function App() {
       .then(data => formatData(data))
       .catch(err => setError(err.message));
 
-    // formatData(mockData); this is used for testing to not use up API calls
+      // formatData(mockData);
 
   }, [])
 
